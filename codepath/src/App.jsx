@@ -2,7 +2,7 @@ import "./App.css";
 import { useRoutes } from "react-router";
 
 import CreatorDetail from "./pages/CreatorDetailPage";
-import AddCreator from "./pages/AddCreator";
+import AddCreator from "./pages/AddCreatorPage";
 import EditCreator from "./pages/EditCreator";
 
 import CreatorList from "./pages/CreatorListPage";
