@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Creator from "../components/Creator";
 
-const ViewCreator = () => {
+const CreatorDetail = () => {
   const [creator, setCreator] = setState({});
 
   // runs when page loads

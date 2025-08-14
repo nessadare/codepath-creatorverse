@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Creator from "../components/Creator";
 
-const CreatorsList = (creators) => {
+const CreatorList = (creators) => {
   return (
     <div className="cards">
       <h1>List of all Creators</h1>

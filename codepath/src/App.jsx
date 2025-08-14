@@ -3,12 +3,12 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Router, useRoutes } from "react-router";
-import ViewCreator from "./pages/ViewCreator";
+import CreatorDetail from "./pages/CreatorDetailPage";
 import AddCreator from "./pages/AddCreator";
 import EditCreator from "./pages/EditCreator";
 import { supabase } from "./client";
 import { createClient } from "@supabase/supabase-js";
-import CreatorsList from "./pages/CreatorsList";
+import CreatorList from "./pages/CreatorListPage";
 
 function App() {
   const [creators, setCreators] = useState([]);
@@ -18,7 +18,7 @@ function App() {
   let element = useRoutes([
     {
       path: "/",
-      element: <CreatorsList creators={creators} />,
+      element: <CreatorList creators={creators} />,
       children: [
         {
           path: "edit",
@@ -26,7 +26,7 @@ function App() {
         },
         {
           path: "view",
-          element: <ViewCreator />,
+          element: <CreatorDetail />,
         },
         {
           path: "add",
